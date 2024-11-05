@@ -118,8 +118,18 @@ The client provided the data under an NDA (non-disclosure agreement), therefore 
 
 ## Dashboard Design
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+### Page 1: Project Summary
+
+- 
+
+- A project summary page, showing the project dataset summary and the client's requirements.
+- A page listing your findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew
+- A page containing:
+    - A link to download a set of cherry leaf images for live prediction (you may use the Kaggle repository that was provided to you).
+    - A User Interface with a file uploader widget. The user should have the capacity to upload multiple images. For each image, it will display the image and a prediction statement, indicating if a cherry leaf is healthy or contains powdery mildew and the probability associated with this statement.
+    - A table with the image name and prediction results, and a download button to download the table.
+- A page indicating your project hypothesis and how you validated it across the project.
+- A technical page displaying your model performance.
 
 ## Unfixed Bugs
 
