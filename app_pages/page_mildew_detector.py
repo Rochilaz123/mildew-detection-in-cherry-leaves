@@ -13,6 +13,8 @@ from src.machine_learning.predictive_analysis import (
 def page_mildew_detector_body():
 
     st.write("---")
+    st.write("## Live Mildew Detector")
+    st.write("---")
 
     st.success(
             f"Upload pictures of cherry leaves here to assess if the leaves are"

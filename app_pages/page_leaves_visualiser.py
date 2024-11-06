@@ -10,7 +10,9 @@ import itertools
 import random
 
 def page_leaves_visualiser_body():
-    st.write("### Leaves Visualizer")
+    st.write("---")
+    st.write("## Leaves Visualizer")
+    st.write("---")
     st.info(
         f"* This page demonstrates the "
         f"difference between a leaf infected with powdery mildew from "
