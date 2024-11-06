@@ -1,46 +1,18 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Powdery Mildew Detection In Cherry Leaves**
 
-## Template Instructions
+## Table of Contents
 
-Welcome,
+1. [Dataset Content](#dataset-content)
+2. [Business Requirements](#business-requirements)
+3. [Hypothesis and Validation](#hypothesis-and-how-to-validate)
+4. [Business Rationale for the Model](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+5. [Business Case](#ml-business-case)
+6. [Dashboard Design](#dashboard-design)
+7. [Bugs](#bugs)
+8. [Deployment](#deployment)
+9. [Main ML Libraries](#main-data-analysis-and-machine-learning-libraries)
+10. [Credits](#credits)
 
-This is the Code Institute student template for the Cherry Leaves project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into your cloud IDE with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and `pip3 install -r requirements.txt`
-
-1. Open the jupyter_notebooks directory, and click on the notebook you want to open.
-
-1. Click the kernel button and choose Python Environments.
-
-Note that the kernel says Python 3.8.18 as it inherits from the workspace, so it will be Python-3.8.18 as installed by our template. To confirm this, you can use `! python --version` in a notebook code cell.
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, then you can create a new one with _Regenerate API Key_.
 
 ## Dataset Content
 
@@ -120,8 +92,6 @@ The client provided the data under an NDA (non-disclosure agreement), therefore 
 
 ### Page 1: Project Summary
 
-- 
-
 - A project summary page, showing the project dataset summary and the client's requirements.
 - A page listing your findings related to a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew
 - A page containing:
@@ -131,15 +101,22 @@ The client provided the data under an NDA (non-disclosure agreement), therefore 
 - A page indicating your project hypothesis and how you validated it across the project.
 - A technical page displaying your model performance.
 
-## Unfixed Bugs
+## Bugs
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+### Fixed Bugs
+
+ - When I ran my model, I received the following warning just before the first epoch was completed: WARNING:tensorflow:Your input ran out of data; interrupting training. 
+    - I changed the batch size to a multiple of the images in the train set and tried again but experienced the same issue. I restarted the notebook and tried again and it worked.
+
+### Unfixed Bugs
+
+- There are no unfixed bugs.
 
 ## Deployment
 
 ### Heroku
 
-- The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
+- The App live link is: `https://powdery-mildew-detector-1-1aa46e7083c4.herokuapp.com/`
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
@@ -152,24 +129,25 @@ The client provided the data under an NDA (non-disclosure agreement), therefore 
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+- numpy==1.19.2 - Used for converting images to arrays
+- pandas==1.1.2 - Used to structure the data in a dataframe
+- matplotlib==3.3.1 - Used for plotting the data visualisation, as well as for plotting images.
+- seaborn==0.11.0 - Used for plotting data visualisation with matplotlib
+- streamlit==0.85.0 - Used for creating the dashboard
+- tensorflow-cpu==2.6.0 - Used for creating the model
+- keras==2.6.0 - Used for creating the model
+
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
-
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- 
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
+- The images used in the leaves dataset were taken from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)
 
-## Acknowledgements (optional)
+## Acknowledgements
 
-- Thank the people who provided support throughout this project.
+- Thank you to Mo Shami, my Code Institute Mentor.
