@@ -22,6 +22,8 @@ def page_ml_performance_metrics():
     st.write("---")
 
     st.write("### Model History")
+    st.info("* The model history shows how the model trained, "
+            "increasing accuracy and decreasing loss.")
     col1, col2 = st.beta_columns(2)
     with col1:
         model_acc = plt.imread(f"outputs/{version}/model_training_acc.png")

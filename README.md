@@ -10,14 +10,14 @@
 2. [Business Requirements](#business-requirements)
 3. [Hypothesis and Validation](#hypothesis-and-validation)
 4. [Business Rationale for the Model](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
-5. [User Stories](#user-stories)
-6. [Business Case](#ml-business-case)
-7. [Dashboard Design](#dashboard-design)
-8. [Bugs](#bugs)
-9. [Deployment](#deployment)
-10. [Technologies Used](#technologies-used)
-11. [Validation](#validation)
-12. [Credits](#credits)
+5. [ML Model](#ml-model)
+5. [ML Business Case](#ml-business-case)
+6. [Dashboard Design](#dashboard-design)
+7. [Bugs](#bugs)
+8. [Deployment](#deployment)
+9. [Technologies Used](#technologies-used)
+10. [Validation](#validation)
+11. [Credits](#credits)
 
 
 ## Dataset Content
@@ -90,6 +90,14 @@ To save time in this process, the IT team suggested an ML system that detects in
 - As a client, I can generate a report on a given group of images. The images are classified by a binary classifier, and the report tells me which leaves are infected.
     - Once a user has uploaded images of cherry leaves on the Powdery Mildew Detection page, they can see an analysis report classifying all uploaded images with their results. They can choose to download this report in .csv format.
 
+## ML Model
+
+The ML model is a Convolutional Neural Network (CNN) built using Keras, a high-level neural networks API. This model is designed for binary classification tasks, as indicated by the use of the sigmoid activation function in the output layer and the binary crossentropy loss function.
+
+- The model has 1 input layer, 3 hidden layers, and 1 output layer
+- Each of the 3 hidden layers are followed by a max pooling layer, which reduces the dimensions of the image by pooling the features it has just extracted.
+- The input layer and the 3 convolutional layer used activation function ReLu as it's simple, fast and reliable.
+- The output layer uses sigmoid as the activation function, as it is suitable for binary classification models, and is commonly used for predicting probabilities.
 
 ## ML Business Case
 
