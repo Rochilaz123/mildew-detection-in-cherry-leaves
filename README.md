@@ -11,13 +11,13 @@
 3. [Hypothesis and Validation](#hypothesis-and-validation)
 4. [Business Rationale for the Model](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
 5. [ML Model](#ml-model)
-5. [ML Business Case](#ml-business-case)
-6. [Dashboard Design](#dashboard-design)
-7. [Bugs](#bugs)
-8. [Deployment](#deployment)
-9. [Technologies Used](#technologies-used)
-10. [Validation](#validation)
-11. [Credits](#credits)
+6. [ML Business Case](#ml-business-case)
+7. [Dashboard Design](#dashboard-design)
+8. [Bugs](#bugs)
+9. [Deployment](#deployment)
+10. [Technologies Used](#technologies-used)
+11. [Validation](#validation)
+12. [Credits](#credits)
 
 
 ## Dataset Content
