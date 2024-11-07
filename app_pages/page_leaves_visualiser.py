@@ -27,12 +27,12 @@ def page_leaves_visualiser_body():
               f"in the centre of the leaf, whilst the average healthy leaf "
               f"is clear")
 
-    avg_infected = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
-    avg_uninfected = plt.imread(f"outputs/{version}/avg_var_healthy.png")
+        avg_infected = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
+        avg_uninfected = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
-    st.image(avg_infected, caption='Infected Leaf - Average and Variability')
-    st.image(avg_uninfected, caption='Healthy Leaf - Average and Variability')
-    st.write("---")
+        st.image(avg_infected, caption='Infected Leaf - Average and Variability')
+        st.image(avg_uninfected, caption='Healthy Leaf - Average and Variability')
+        st.write("---")
 
     if st.checkbox(
             "Differences between average infected and average healthy leaves"):
