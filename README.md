@@ -1,5 +1,7 @@
 # **Powdery Mildew Detection In Cherry Leaves**
 
+![Mildew Detector Responsive](readme_images/amiresponsive_mildew_detector.png)
+
 ## Table of Contents
 
 1. [Dataset Content](#dataset-content)
@@ -11,7 +13,8 @@
 7. [Bugs](#bugs)
 8. [Deployment](#deployment)
 9. [Main ML Libraries](#main-data-analysis-and-machine-learning-libraries)
-10. [Credits](#credits)
+10. [Validation](#validation)
+11. [Credits](#credits)
 
 
 ## Dataset Content
@@ -38,8 +41,18 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ### Validation
 
+- As suspected, the average infected image displays white marks over the body of the leaf, and the body of the average healthy leaf appears clearer.
+- The healthy variability image shows the center of the leaf is mostly clear, whilst the infected variability image has visible white lines and marks accross it.
+
 <img src="outputs/v1/avg_var_healthy.png" alt="average variability image for healthy leaf" width="65%"/>
 <img src="outputs/v1/avg_var_powdery_mildew.png" alt="average variability image for infected leaf" width="65%"/>
+
+- We can also see a clear visual difference between the healthy leaves and the infected leaves below. The infected leaves seem to be more dull, and have white marks or patches on the surface of the leaves
+
+![Healthy Leaf Montage](readme_images/healthy_montage.png)
+![Infected Leaf Montage](readme_images/infected_montage.png)
+
+
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
@@ -54,6 +67,9 @@ To save time in this process, the IT team suggested an ML system that detects in
     - We want to predict if a leaf is infected with powdery mildew, or if it is healthy.
     - We want to build a binary classifier and generate reports.
 
+### User Stories
+
+- As a client, I can navigate around the dashboard easily and understand the data presented.
 
 ## ML Business Case
 
@@ -183,6 +199,10 @@ See [Hypothesis and Validation](#hypothesis-and-validation) for more details.
 - tensorflow-cpu==2.6.0 - Used for creating the model
 - keras==2.6.0 - Used for creating the model
 
+## Validation
+
+- All python files, as well as python code in jupyter notebooks, conform to PEP8 standards.
+- All code was validated using the [CI Python Linter](https://pep8ci.herokuapp.com/)
 
 ## Credits
 
