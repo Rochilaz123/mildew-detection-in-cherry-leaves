@@ -8,13 +8,14 @@
 2. [Business Requirements](#business-requirements)
 3. [Hypothesis and Validation](#hypothesis-and-validation)
 4. [Business Rationale for the Model](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
-5. [Business Case](#ml-business-case)
-6. [Dashboard Design](#dashboard-design)
-7. [Bugs](#bugs)
-8. [Deployment](#deployment)
-9. [Main ML Libraries](#main-data-analysis-and-machine-learning-libraries)
-10. [Validation](#validation)
-11. [Credits](#credits)
+5. [User Stories](#user-stories)
+6. [Business Case](#ml-business-case)
+7. [Dashboard Design](#dashboard-design)
+8. [Bugs](#bugs)
+9. [Deployment](#deployment)
+10. [Main ML Libraries](#main-data-analysis-and-machine-learning-libraries)
+11. [Validation](#validation)
+12. [Credits](#credits)
 
 
 ## Dataset Content
@@ -52,6 +53,9 @@ To save time in this process, the IT team suggested an ML system that detects in
 ![Healthy Leaf Montage](readme_images/healthy_montage.png)
 ![Infected Leaf Montage](readme_images/infected_montage.png)
 
+- Although we can see a difference between the average healthy and infected cherry leaves, the average difference image is not very informative.
+
+<img src="outputs/v1/avg_diff.png" alt="average difference image" width="75%"/>
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
@@ -70,6 +74,20 @@ To save time in this process, the IT team suggested an ML system that detects in
 ### User Stories
 
 - As a client, I can navigate around the dashboard easily and understand the data presented.
+    - The dashboard is built using streamlit, with an easy navigation bar to navigate easily between pages.
+
+- As a client, I can visually see the difference between the average infected and healthy cherry leaves.
+    - The Leaves Visualiser page on the dashboard visually shows a user the difference between the average healthy and infected cherry leaves, along with a short explanation.
+
+- As a client, I want to display a montage of cherry leaves that are healthy, and of cherry leaves that are infected with powdery mildew, so that i can visually differentiate cherry leaves.
+    - On the Leaves Visualiser page on the dashboard, a user can choose to generate a moontage of healthy or infected leaves. You can refresh the montage to generate a new montage of random images.
+
+- As a client, I want a ML model to predict with a 97% accuracy whether a random cherry leaf is healthy or is infected with powdery mildew.
+    - On the Powdery Mildew Detection page, a user can upload live images, and the model will predict with nearly 99% accuracy whether the leaf is infected with powdery mildew or not.
+
+- As a client, I can generate a report on a given group of images. The images are classified by a binary classifier, and the report tells me which leaves are infected.
+    - Once a user has uploaded images of cherry leaves on the Powdery Mildew Detection page, they can see an analysis report classifying all uploaded images with their results. They can choose to download this report in .csv format.
+
 
 ## ML Business Case
 
