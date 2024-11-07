@@ -8,11 +8,11 @@ import joblib
 
 def download_dataframe_as_csv(df):
 
-    datetime_now = datetime.now().strftime("%d%b%Y_%Hh%Mmin%Ss")
+    now = datetime.now().strftime("%d%b%Y_%Hh%Mmin%Ss")
     csv = df.to_csv().encode()
     b64 = base64.b64encode(csv).decode()
     href = (
-        f'<a href="data:file/csv;base64,{b64}" download="Report {datetime_now}.csv" '
+        f'<a href="data:file/csv;base64,{b64}" download="Report {now}.csv" '
         f'target="_blank">Download Report</a>'
     )
     return href
