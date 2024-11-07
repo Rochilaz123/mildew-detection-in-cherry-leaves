@@ -2,6 +2,8 @@
 
 ![Mildew Detector Responsive](readme_images/amiresponsive_mildew_detector.png)
 
+### **Click [here](https://powdery-mildew-detector-1-1aa46e7083c4.herokuapp.com/) to go to the live app.**
+
 ## Table of Contents
 
 1. [Dataset Content](#dataset-content)
@@ -13,7 +15,7 @@
 7. [Dashboard Design](#dashboard-design)
 8. [Bugs](#bugs)
 9. [Deployment](#deployment)
-10. [Main ML Libraries](#main-data-analysis-and-machine-learning-libraries)
+10. [Technologies Used](#technologies-used)
 11. [Validation](#validation)
 12. [Credits](#credits)
 
@@ -194,11 +196,13 @@ See [Hypothesis and Validation](#hypothesis-and-validation) for more details.
 
 ## Deployment
 
-### Heroku
-
 - The App live link is: `https://powdery-mildew-detector-1-1aa46e7083c4.herokuapp.com/`
+
+### Creating the Heroku App
+
+- Create a requirement.txt file in GitHub, for Heroku to read, listing all the dependancies the program needs in order to run.
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-- The project was deployed to Heroku using the following steps.
+- Push the changes to GitHub and follow the steps below to deploy the project:
 
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
@@ -207,7 +211,17 @@ See [Hypothesis and Validation](#hypothesis-and-validation) for more details.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
 6. If the slug size is too large, then add large files not required for the app to the .slugignore file.
 
-## Main Data Analysis and Machine Learning Libraries
+### Forking the Repository
+
+- Forking a repository on GitHub makes a copy of the original repository on your account, enabling you to make changes without affecting the original repository.
+    - Locate the GitHub repository and log into your GitHub account.
+    - Locate the fork button on the top right, click fork, and then click create a new fork.
+    - Choose a repository name and click Create Fork.
+    - You now have a copy of the original repository in your GitHub account.
+
+## Technologies Used
+
+### Main Data Analysis and Machine Learning Libraries
 
 - numpy==1.19.2 - Used for converting images to arrays
 - pandas==1.1.2 - Used to structure the data in a dataframe
@@ -216,6 +230,18 @@ See [Hypothesis and Validation](#hypothesis-and-validation) for more details.
 - streamlit==0.85.0 - Used for creating the dashboard
 - tensorflow-cpu==2.6.0 - Used for creating the model
 - keras==2.6.0 - Used for creating the model
+
+### Languages
+
+- Python
+- Markdown
+
+### Platforms
+
+- Gitpod: Development environment used for writing code and pushing to GitHub.
+- GitHub: Cloud based platform used to store the project code.
+- Kaggle: Used to download the dataset for this project.
+- Heroku: Used to deploy this project.
 
 ## Validation
 
@@ -226,7 +252,7 @@ See [Hypothesis and Validation](#hypothesis-and-validation) for more details.
 
 ### Content
 
-- Throughout the project, I was following the Malaria Detector Walkthrough Project with Code Institute.
+- Throughout the project, I followed the Malaria Detector Walkthrough Project with Code Institute.
 
 ### Media
 
@@ -234,4 +260,6 @@ See [Hypothesis and Validation](#hypothesis-and-validation) for more details.
 
 ## Acknowledgements
 
-- Thank you to Mo Shami, my Code Institute Mentor.
+- Thank you to Mo Shami, my Code Institute Mentor for this project.
+
+**Click [here](https://powdery-mildew-detector-1-1aa46e7083c4.herokuapp.com/) to go to the live app.**
