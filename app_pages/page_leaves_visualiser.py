@@ -14,8 +14,8 @@ def page_leaves_visualiser_body():
     st.write("## Leaves Visualizer")
     st.write("---")
     st.info(
-        f"* This page demonstrates the "
-        f"difference between a leaf infected with powdery mildew from "
+        f"This page fulfills Business Requirement 1: \n\n Visually "
+        f"differentiating a leaf infected with powdery mildew from "
         f"a healthy leaf.")
     
     version = 'v1'

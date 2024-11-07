@@ -19,8 +19,8 @@ def page_project_hypothesis_body():
 
     st.success(
         f"* Average Image shows that the surface of the average healthy leaf is clear, "
-        f"whilst the surface of the average infected leaf has white marks."
-        f"The Variability Image reveals white lines accross the centre of the average "
+        f"whilst the surface of the average infected leaf has white marks.\n\n"
+        f"* The Variability Image reveals white lines accross the centre of the average "
         f"infected leaf, whilst the centre of the average healthy leaf is clear."        
     )
 
@@ -50,24 +50,11 @@ def page_project_hypothesis_body():
 
 
 def image_montage(dir_path, label_to_display, nrows, ncols, figsize=(15,10)):
-  sns.set_style("white")
-  labels = os.listdir(dir_path)
-
-  # subset the class you are interested to display
-  if label_to_display in labels:
-
-    # checks if your montage space is greater than subset size
-    # how many images in that folder
+    sns.set_style("white")
+    labels = os.listdir(dir_path)
     images_list = os.listdir(dir_path+'/'+ label_to_display)
-    if nrows * ncols < len(images_list):
-      img_idx = random.sample(images_list, nrows * ncols)
-    else:
-      print(
-          f"Decrease nrows or ncols to create your montage. \n"
-          f"There are {len(images_list)} in your subset. "
-          f"You requested a montage with {nrows * ncols} spaces")
-      return
-    
+    img_idx = random.sample(images_list, nrows * ncols)
+
 
     # create list of axes indices based on nrows and ncols
     list_rows= range(0,nrows)
